@@ -20,11 +20,11 @@
 
 This project is a simple demonstration of an animated credit card form. It's made using
 
-- HTML
-- CSS
-- JS
-- Anime.js - for animations :dizzy:
-- Rollup - for bundling :wrench: and some peace of mind :clown_face:
+- **HTML**
+- **CSS**
+- **JS**
+- **[anime.js](https://github.com/juliangarnier/anime)** - for animations :dizzy:
+- **[Rollup Starter App](https://github.com/rollup/rollup-starter-app)** - for bundling :wrench: and some peace of mind :clown_face:
 
 Check it out by clicking [here](https://animated-cc-form.netlify.app/)
 
