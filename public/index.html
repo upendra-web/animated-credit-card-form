@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+  <head lang="en">
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>A Simple Credit Card Form</title>
+    <link rel="stylesheet" href="./css/main.css" />
+  </head>
+  <body>
+    <div class="cc-form-container">
+      <div class="cc-form-content">
+        <div class="cc-flip-container">
+          <!-- Card container -->
+          <div class="cc-card-container fit-a" id="cc-card-container">
+            <!-- CC - Front ------------------------------------------------------------------------------ -->
+            <section class="cc-front fit-a">
+              <img src="./images/chip.png" alt="card-chip" class="cc-chip" />
+
+              <div class="cc-type-img-flip-container">
+                <div id="cc-type-img-container" class="relative"></div>
+              </div>
+
+              <div id="cc-card-number-text"></div>
+
+              <div class="cc-holder-name-text" id="cc-holder-name-text">
+                <div class="card-label">Card Holder</div>
+                <div id="card-holder-name" class="flex card-other-text">
+                  <div id="card-holder-name-placeholder">YOUR NAME</div>
+                </div>
+              </div>
+
+              <div class="cc-expiry-date-text" id="cc-expiry-date-text">
+                <div class="card-label">Expires</div>
+                <div class="card-expiry-date card-other-text flex">
+                  <div id="card-expiry-month" class="relative">
+                    <div id="card-expiry-month-placeholder">MM</div>
+                  </div>
+                  /
+                  <div id="card-expiry-year" class="relative">
+                    <div id="card-expiry-year-placeholder">YY</div>
+                  </div>
+                </div>
+              </div>
+            </section>
+
+            <!-- CC - Back ------------------------------------------------------------------------------ -->
+            <section class="cc-back fit-a">
+              <div class="cc-magnetic-strip"></div>
+
+              <div class="cc-cvv-container">
+                <div class="cvv-label card-label">CVV</div>
+                <div id="cc-cvv-text"></div>
+              </div>
+
+              <img
+                src=""
+                alt="card-type-back"
+                class="cc-type-img-back hide-alt"
+                id="cc-type-img-back"
+              />
+            </section>
+          </div>
+        </div>
+
+        <!-- Form ------------------------------------------------------------------------------ -->
+        <form action="" class="fit-w">
+          <!-- CC number -->
+          <div class="form-control">
+            <label for="cc-card-number" class="form-label">Card Number</label>
+            <input id="cc-card-number" class="form-input" type="number" autocomplete="off" />
+          </div>
+
+          <!-- CC holder name -->
+          <div class="form-control">
+            <label for="cc-card-holders-name" class="form-label">Card Holder's Name</label>
+            <input id="cc-card-holders-name" class="form-input" type="text" autocomplete="off" />
+          </div>
+
+          <!-- CC other details -->
+          <div class="flex">
+            <!-- CC expiry month -->
+            <div class="form-control mr1">
+              <label for="cc-card-expiry-month" class="form-label">Expiration Date</label>
+              <select
+                id="cc-card-expiry-month"
+                class="form-input form-select"
+                autocomplete="off"
+              ></select>
+            </div>
+
+            <!-- CC expiry year -->
+            <div class="form-control mr2">
+              <label for="cc-card-expiry-year" class="form-label opacity-0">Year</label>
+              <select
+                id="cc-card-expiry-year"
+                class="form-input form-select"
+                autocomplete="off"
+              ></select>
+            </div>
+
+            <!-- CC CVV -->
+            <div class="form-control">
+              <label for="cc-card-cvv" class="form-label">CVV</label>
+              <input
+                id="cc-card-cvv"
+                class="form-input"
+                type="number"
+                maxlength="3"
+                autocomplete="off"
+              />
+            </div>
+          </div>
+
+          <button id="cc-card-submit-button" class="form-submit" type="submit">Submit</button>
+        </form>
+      </div>
+    </div>
+    <script src="bundle.js"></script>
+  </body>
+</html>
