@@ -26,4 +26,20 @@ This project is a simple demonstration of an animated credit card form. It's mad
 
 Check it out by clicking [here](https://animated-cc-form.netlify.app/)
 
+## Development
+
+```bash
+# 1. First clone repository
+git clone https://github.com/upendra-web/animated-credit-card-form
+
+# 2. Go to project repo
+cd animated-credit-card-form
+
+# 3. Install dependencies
+npm i
+
+# 4. Start development server
+npm run dev
+```
+
 Feel free to open any issues and contribute to this project. Cheers :beers:
