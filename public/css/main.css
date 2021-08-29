@@ -56,6 +56,14 @@ input[type='number'] {
   display: flex;
 }
 
+.items-center {
+  align-items: center;
+}
+
+.justify-between {
+  justify-content: space-between;
+}
+
 .opacity-0 {
   opacity: 0;
 }
@@ -80,6 +88,10 @@ input[type='number'] {
   position: absolute;
 }
 
+.fixed {
+  position: fixed;
+}
+
 .hide-alt {
   text-indent: 100%;
   white-space: nowrap;
@@ -96,6 +108,38 @@ input[type='number'] {
 
 .mr2 {
   margin-right: 2rem;
+}
+
+.left-0 {
+  left: 0;
+}
+
+.top-0 {
+  top: 0;
+}
+
+.bottom-0 {
+  bottom: 0;
+}
+
+.right-0 {
+  bottom: 0;
+}
+
+.p2 {
+  padding: 1rem;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.cc-link {
+  color: #85144b;
 }
 
 /* CC Card Styles ============================================================================================ */
